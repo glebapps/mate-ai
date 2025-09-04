@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Home, Users, Bell } from 'lucide-react'
 import './globals.css'
 import { flatmates } from '@/lib/data/mockData'
+import { ChatWithMate } from '@/components/ChatWithMate'
 
 export const metadata: Metadata = {
   title: 'Mate AI - Your Flatmate Assistant',
@@ -40,6 +41,8 @@ export default function RootLayout({
               </div>
             </div>
           </header>
+
+          <ChatWithMate />
 
           {/* Main Content */}
           <main className="max-w-6xl mx-auto px-4 py-6">{children}</main>
