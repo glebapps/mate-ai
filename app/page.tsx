@@ -1,5 +1,5 @@
-import MateAIMockUp from '@/components/MateAIMockUp'
+import { redirect } from 'next/navigation'
 
 export default function Home() {
-  return <MateAIMockUp />
+  redirect('/dashboard')
 }
